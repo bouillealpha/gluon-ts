@@ -92,6 +92,9 @@ class DeepFactorNetworkBase(HybridBlock):
         raise NotImplementedError
 
     def negative_normal_likelihood(self, F, y, mu, sigma):
+        """
+        empty docstring
+        """
         return (
             F.log(sigma)
             + 0.5 * math.log(2 * math.pi)
